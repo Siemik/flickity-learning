@@ -32,6 +32,7 @@
   "homepage": "https://github.com/Siemik/pokemon-game#readme",
   "dependencies": {
     "browser-sync": "^2.26.3",
+    "flickity-hash": "^1.0.3",
     "onchange": "^5.2.0",
     "rimraf": "^2.6.3"
   },

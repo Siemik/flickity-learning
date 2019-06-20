@@ -1,1 +1,13 @@
 body { background-color: gray; }
+
+main { position: relative; width: 1200px; height: 700px; margin: 0 auto; }
+
+.container { width: 1200px; height: 700px; margin: 0 auto; font-size: 50px; text-align: center; }
+
+.carousel-cell { background-size: cover; background-position: bottom; }
+
+.flickity-page-dots { display: none; }
+
+.button-group { z-index: 2; position: absolute; top: 0; right: 0; }
+
+.button { background-color: rgba(0, 0, 0, 0.2); border-left: 2px solid white; border-bottom: 2px solid white; border-top: none; border-right: none; border-radius: 0 0 0 60px; color: white; width: 100px; height: 70px; text-align: center; text-decoration: none; display: inline-block; font-size: 19px; color: white; }
