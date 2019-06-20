@@ -1,25 +1,31 @@
 body {
-  background-color: gray;
+  background-color: white;
 }
 main {
+  font-family: 'Comfortaa', cursive;
   position: relative;
   width: 1200px;
-  height: 700px;
+  height: 600px;
   margin: 0 auto;
 }
 .container {
   width: 1200px;
-  height: 700px;
+  height: 600px;
   margin: 0 auto;
-  font-size: 50px;
+  font-size: 130px;
   text-align: center;
 }
 .carousel-cell {
   background-size: cover;
-  background-position: bottom;
+  background-position: center;
 }
 .flickity-page-dots {
   display: none;
+}
+.slider-text {
+  padding-top: 30px;
+  color: white;
+  text-shadow: 5px 5px 0px black;
 }
 .button-group {
   z-index: 2;
@@ -28,9 +34,10 @@ main {
   right: 0;
 }
 .button {
+  text-shadow: 2px 2px 0px black;
   background-color: rgba(0, 0, 0, 0.2);
   border-left: 2px solid white;
-  border-bottom: 2px solid white;
+  border-bottom: 2px dotted white;
   border-top: none;
   border-right: none;
   border-radius:0 0 0 60px;
