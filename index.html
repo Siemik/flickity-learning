@@ -10,29 +10,57 @@
   </head>
   <body>
   <main>
-    <div class="carousel container" data-flickity='{ "cellAlign": "left", "contain": true, "hash": true }'>
-      <div class="carousel-cell container cell1" id="carousel-cell1" style="background-image: url(https://images.unsplash.com/photo-1495317823589-e67efe1524b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);">
-        <p class="slider-text">Buenos Aires</p>
-      </div>
-      <div class="carousel-cell container" id="carousel-cell2" style="background-image: url(https://images.unsplash.com/photo-1537185092028-39776974a7fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);">
-        <p class="slider-text">Warsaw</p>
-      </div>
-      <div class="carousel-cell container" id="carousel-cell3" style="background-image: url(https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);">
-        <p class="slider-text">New York</p>
-      </div>
-      <div class="carousel-cell container" id="carousel-cell4" style="background-image: url(https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1971&q=80);">
-        <p class="slider-text">Tokyo</p>
-      </div>
-      <div class="carousel-cell container" id="carousel-cell5" style="background-image: url(https://images.unsplash.com/photo-1523662070078-0310b6680524?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80);">
-        <p class="slider-text">Toronoto</p>
-      </div>
-    </div>
+    <!-- Man carousel container -->
+    <div class="carousel-main container" data-flickity='{ "cellAlign": "left", "contain": true, "hash": true }'></div>
+    <!-- Reset button -->
     <div class="button-group">
       <button class="button" data-selector=".cell1">Reset</button>
     </div>
   </main>
+  <!-- Scripts -->
+  <script id="newCarousel" type="x-tmpl-mustache">
+  			<div class="carousel-cell container" id="{{id}}" style="background-image: url({{ image }})">
+  				<h1>{{ title }}</h1>
+  				{{{description}}}
+  			</div>
+  </script>
+  <script>
+  	var cellsCarousel = [
+  		{
+  			image: 'https://images.unsplash.com/photo-1495317823589-e67efe1524b0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
+  			title: 'Buenos Aires',
+  			description: '<p>¡Bienvenido a Argentina!</p>',
+        id: 'carousel-cell1'
+  		},
+  		{
+  			image: 'https://images.unsplash.com/photo-1537185092028-39776974a7fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
+  			title: 'Warsaw',
+  			description: '<p>Witamy w Polsce!</p>',
+        id: 'carousel-cell2'
+  		},
+  		{
+  			image: 'https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
+  			title: 'New York',
+  			description: '<p>Welcome to the United States!</p>',
+        id: 'carousel-cell3'
+  		},
+  		{
+  			image: 'https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1971&q=80',
+  			title: 'Tokyo',
+  			description: '<p>日本へようこそ</p>',
+        id: 'carousel-cell4'
+  		},
+  		{
+  			image: 'https://images.unsplash.com/photo-1523662070078-0310b6680524?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
+  			title: 'Toronoto',
+  			description: '<p>Welcome to the Canada!</p>',
+        id: 'carousel-cell5'
+  		}
+  	];
+  </script>
   <script src="vendor/flickity.pkgd.min.js"></script>
   <script src="https://unpkg.com/flickity-hash@1/hash.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
   <script src="js/script.js"></script>
   </body>
 </html>
