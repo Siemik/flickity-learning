@@ -5,10 +5,8 @@
   Mustache.parse(templateCarousel);
   var listCells = '';
   for (var i = 0; i < cellsCarousel.length; i++) {
-    console.log(cellsCarousel[i]);
     listCells += Mustache.render(templateCarousel, cellsCarousel[i]);
   }
-
   var carousel = document.querySelector('.carousel-main');
   carousel.innerHTML += listCells;
 })();
