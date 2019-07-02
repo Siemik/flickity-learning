@@ -13,3 +13,5 @@ p, h1 { padding-top: 30px; color: white; text-shadow: 3px 3px 0px black; }
 .button-group { z-index: 2; position: absolute; top: 0; right: 0; }
 
 .button { text-shadow: 2px 2px 0px black; background-color: rgba(0, 0, 0, 0.4); border-left: 2px solid white; border-bottom: 2px solid white; border-top: none; border-right: none; border-radius: 0 0 0 60px; color: white; width: 100px; height: 70px; text-align: center; text-decoration: none; display: inline-block; font-size: 19px; color: white; }
+
+#map { height: 400px; }

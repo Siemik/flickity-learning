@@ -27,3 +27,12 @@ buttonGroup.addEventListener('click', function(){
 	flkty.next(true);
   flkty.select( 0 );
 })
+// Google map
+window.initMap = function(){
+	var map = new google.maps.Map(document.getElementById('map'), {zoom: 6, center: cellsCarousel[0].coords});
+	for (var i = 0; i < cellsCarousel.length; i++) {
+			var markers = [];
+			markers[i] = new google.maps.Marker({position: cellsCarousel[i].coords, map: map});
+
+	};
+};
